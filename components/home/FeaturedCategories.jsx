@@ -61,7 +61,7 @@ export default function FeaturedCategories() {
             >
               <Link
                 href={`/categories/${cat.id}`}
-                className="flex flex-col items-center justify-center gap-3 p-5 sm:p-7 rounded-2xl bg-surface border border-slate-100 hover:border-primary/30 hover:shadow-md transition-all duration-300 group"
+                className="flex flex-col items-center justify-center gap-3 p-5 h-[17vh] sm:p-7 rounded-2xl bg-surface border border-slate-100 hover:border-primary/30 hover:shadow-md transition-all duration-300 group"
               >
                 <div className="w-12 h-12 rounded-full bg-primary/8 flex items-center justify-center group-hover:bg-secondary group-hover:text-white text-secondary transition-colors duration-300">
                   <Icon className="w-5 h-5" />
