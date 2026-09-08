@@ -53,10 +53,10 @@ export default function CartPage() {
   }
 
   return (
-    <div className="w-[100%] mx-auto px-4 sm:px-6 lg:px-10 py-10 overflow-hidden">
+    <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-10 py-10 overflow-hidden">
       <h1 className="text-2xl sm:text-3xl font-bold text-text-primary mb-8">Shopping Cart</h1>
 
-      <div className="grid lg:grid-cols-[1fr_360px] w-[100%] gap-10">
+      <div className="grid lg:grid-cols-[1fr_360px] gap-10">
         <div>
           <div className="flex items-center justify-between mb-4">
             <p className="text-sm text-text-secondary">{items.length} item(s)</p>
