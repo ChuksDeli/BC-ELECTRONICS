@@ -7,7 +7,7 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 
 export const metadata = {
-  title: 'Ajo | Electronics That Actually Deliver',
+  title: 'BC ELECTRONICS | Electronics That Actually Deliver',
   description: 'Genuine electronics from brands you already trust, with fast delivery and real warranty support.',
 };
 
