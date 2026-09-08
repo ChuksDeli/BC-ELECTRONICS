@@ -53,7 +53,7 @@ export default function CartPage() {
   }
 
   return (
-    <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-10 py-10">
+    <div className="max-w-[100%] mx-auto px-4 sm:px-6 lg:px-10 py-10 overflow-hidden">
       <h1 className="text-2xl sm:text-3xl font-bold text-text-primary mb-8">Shopping Cart</h1>
 
       <div className="grid lg:grid-cols-[1fr_360px] gap-10">
