@@ -9,7 +9,7 @@ const contactInfo = [
   {
     icon: FiMail,
     label: 'Email Us',
-    value: 'support@ajo.com',
+    value: 'support@BC-ELECTRONICS.com',
     detail: 'We reply within 24 hours',
   },
   {
