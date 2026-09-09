@@ -34,7 +34,7 @@ export default function ProfileInfoTab() {
             <input
               value={form.firstName}
               onChange={(e) => setForm({ ...form, firstName: e.target.value })}
-              className="w-full text-sm border border-slate-200 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-primary/20"
+              className="w-full text-sm border border-slate-200 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-secondary/20"
             />
           </div>
           <div>
@@ -44,7 +44,7 @@ export default function ProfileInfoTab() {
             <input
               value={form.lastName}
               onChange={(e) => setForm({ ...form, lastName: e.target.value })}
-              className="w-full text-sm border border-slate-200 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-primary/20"
+              className="w-full text-sm border border-slate-200 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-secondary/20"
             />
           </div>
         </div>
@@ -54,7 +54,7 @@ export default function ProfileInfoTab() {
             type="email"
             value={form.email}
             onChange={(e) => setForm({ ...form, email: e.target.value })}
-            className="w-full text-sm border border-slate-200 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-primary/20"
+            className="w-full text-sm border border-slate-200 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-secondary/20"
           />
         </div>
         <div>
@@ -65,12 +65,12 @@ export default function ProfileInfoTab() {
             value={form.phone}
             onChange={(e) => setForm({ ...form, phone: e.target.value })}
             placeholder="Add a phone number"
-            className="w-full text-sm border border-slate-200 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-primary/20"
+            className="w-full text-sm border border-slate-200 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-secondary/20"
           />
         </div>
 
         <div className="flex items-center gap-3 pt-2">
-          <Button type="submit" variant="primary" size="md">
+          <Button type="submit" variant="secondary" size="md">
             Save Changes
           </Button>
           {saved && (

@@ -43,7 +43,7 @@ export default function ContactPage() {
         transition={{ duration: 0.5 }}
         className="max-w-xl mb-14"
       >
-        <p className="text-[11px] uppercase tracking-widest text-primary font-semibold mb-4">
+        <p className="text-[11px] uppercase tracking-widest text-secondary font-semibold mb-4">
           Contact Us
         </p>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-text-primary leading-tight mb-4">
@@ -126,7 +126,7 @@ export default function ContactPage() {
                 />
               </div>
 
-              <Button type="submit" variant="primary" size="lg" className="w-full sm:w-auto">
+              <Button type="submit" variant="secondary" size="lg" className="w-full sm:w-auto">
                 Send Message
               </Button>
             </form>
@@ -146,7 +146,7 @@ export default function ContactPage() {
                 key={info.label}
                 className="bg-surface rounded-2xl border border-slate-100 p-5 flex items-start gap-4"
               >
-                <div className="w-11 h-11 rounded-xl bg-primary/8 text-primary flex items-center justify-center shrink-0">
+                <div className="w-11 h-11 rounded-xl bg-primary/8 text-secondary flex items-center justify-center shrink-0">
                   <Icon className="w-5 h-5" />
                 </div>
                 <div>

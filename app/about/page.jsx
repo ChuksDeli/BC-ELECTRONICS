@@ -36,7 +36,7 @@ export default function AboutPage() {
         transition={{ duration: 0.5 }}
         className="max-w-2xl mb-16"
       >
-        <p className="text-[11px] uppercase tracking-widest text-primary font-semibold mb-4">
+        <p className="text-[11px] uppercase tracking-widest text-secondary font-semibold mb-4">
           About Us
         </p>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-text-primary leading-tight mb-6">
@@ -62,7 +62,7 @@ export default function AboutPage() {
               transition={{ duration: 0.4, delay: i * 0.08 }}
               className="p-6 rounded-2xl bg-surface border border-slate-100"
             >
-              <div className="w-11 h-11 rounded-xl bg-primary/8 text-primary flex items-center justify-center mb-4">
+              <div className="w-11 h-11 rounded-xl bg-primary/8 text-secondary flex items-center justify-center mb-4">
                 <Icon className="w-5 h-5" />
               </div>
               <h3 className="text-sm font-semibold text-text-primary mb-1.5">{value.title}</h3>

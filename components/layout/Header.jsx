@@ -296,7 +296,7 @@ function HeaderContent() {
             <Link
               href="/search"
               className={`md:hidden p-2.5 rounded-full transition-colors ${
-                pathname === '/search' ? 'bg-primary/10 text-primary' : 'hover:bg-slate-100'
+                pathname === '/search' ? 'bg-secondary/10 text-secondary' : 'hover:bg-slate-100'
               }`}
             >
               <FiSearch className="w-5 h-5" />
@@ -305,7 +305,7 @@ function HeaderContent() {
             <Link
               href="/wishlist"
               className={`relative p-2.5 rounded-full transition-colors ${
-                pathname === '/wishlist' ? 'bg-primary/10 text-primary' : 'hover:bg-slate-100'
+                pathname === '/wishlist' ? 'bg-secondary/10 text-secondary' : 'hover:bg-slate-100'
               }`}
             >
               <FiHeart className="w-5 h-5" />
@@ -339,7 +339,7 @@ function HeaderContent() {
               <button
                 onClick={() => setProfileMenuOpen((o) => !o)}
                 className={`p-2.5 rounded-full transition-colors flex items-center gap-1.5 ${
-                  pathname === '/profile' ? 'bg-primary/10 text-secondary' : 'hover:bg-slate-100'
+                  pathname === '/profile' ? 'bg-secondary/10 text-secondary' : 'hover:bg-slate-100'
                 }`}
               >
                 <FiUser className="w-5 h-5" />

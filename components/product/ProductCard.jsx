@@ -27,9 +27,9 @@ export default function ProductCard({ product, index = 0 }) {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.45, delay: index * 0.04, ease: [0.22, 1, 0.36, 1] }}
-        className="group relative bg-surface rounded-2xl border border-slate-100 hover:border-slate-200 hover:shadow-lg hover:shadow-slate-200/60 transition-all duration-300 overflow-hidden"
+        className="group relative bg-surface rounded-2xl border border-slate-100 hover:border-slate-200 hover:shadow-lg hover:shadow-slate-200/60 transition-all duration-300 overflow-hidden h-full flex flex-col"
       >
-        <Link href={`/products/${product.id}`} className="block">
+        <Link href={`/products/${product.id}`} className="block shrink-0">
           <div className="relative aspect-square bg-slate-50 overflow-hidden">
             <Image
               src={product.images[0]}
@@ -76,18 +76,20 @@ export default function ProductCard({ product, index = 0 }) {
           </div>
         </Link>
 
-        <div className="p-4">
-          <p className="text-[11px] uppercase tracking-wide text-text-secondary mb-1">
-            {product.brand}
-          </p>
-          <Link href={`/products/${product.id}`}>
-            <h3 className="text-sm font-semibold text-text-primary line-clamp-2 mb-1.5 hover:text-secondary/60 transition-colors">
-              {product.name}
-            </h3>
-          </Link>
-          <RatingStars rating={product.rating} reviews={product.reviews} />
+        <div className="p-4 flex-1 flex flex-col">
+          <div>
+            <p className="text-[11px] uppercase tracking-wide text-text-secondary mb-1">
+              {product.brand}
+            </p>
+            <Link href={`/products/${product.id}`}>
+              <h3 className="text-sm font-semibold text-text-primary line-clamp-2 mb-1.5 hover:text-secondary/60 transition-colors">
+                {product.name}
+              </h3>
+            </Link>
+            <RatingStars rating={product.rating} reviews={product.reviews} />
+          </div>
 
-          <div className="flex items-center justify-between mt-3">
+          <div className="flex items-center justify-between mt-auto pt-3">
             <div className="flex items-baseline gap-2">
               <span className="text-lg font-bold text-text-primary">${product.price}</span>
               {product.oldPrice && (
@@ -103,7 +105,7 @@ export default function ProductCard({ product, index = 0 }) {
                 addItem(product, 1, { color: product.colors?.[0] });
               }}
               disabled={product.stock === 0}
-              className="w-9 h-9 rounded-full bg-secondary text-white flex items-center justify-center hover:bg-secondary/70 transition-colors disabled:opacity-40"
+              className="w-9 h-9 rounded-full bg-secondary text-white flex items-center justify-center hover:bg-secondary/70 transition-colors disabled:opacity-40 shrink-0"
               aria-label="Add to cart"
             >
               <FiShoppingCart className="w-4 h-4" />

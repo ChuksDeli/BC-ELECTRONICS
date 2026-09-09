@@ -64,11 +64,11 @@ export default function ProductDetailsPage({ params }) {
   return (
     <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-10 py-10">
       <div className="flex items-center gap-1.5 text-xs text-text-secondary mb-6">
-        <Link href="/" className="hover:text-primary">
+        <Link href="/" className="hover:text-secondary">
           Home
         </Link>
         <FiChevronRight className="w-3 h-3" />
-        <Link href={`/categories/${product.category}`} className="hover:text-primary capitalize">
+        <Link href={`/categories/${product.category}`} className="hover:text-secondary capitalize">
           {product.category.replace('-', ' ')}
         </Link>
         <FiChevronRight className="w-3 h-3" />
@@ -168,7 +168,7 @@ export default function ProductDetailsPage({ params }) {
               Add to Cart
             </Button>
             <Button
-              variant="primary"
+              variant="secondary"
               size="lg"
               onClick={handleBuyNow}
               disabled={product.stock === 0}
@@ -189,7 +189,7 @@ export default function ProductDetailsPage({ params }) {
             <div className="relative">
               <button
                 onClick={handleShare}
-                className="flex items-center gap-2 text-sm text-text-secondary hover:text-primary transition-colors"
+                className="flex items-center gap-2 text-sm text-text-secondary hover:text-secondary transition-colors"
               >
                 <FiShare2 className="w-4 h-4" />
                 Share
@@ -208,15 +208,15 @@ export default function ProductDetailsPage({ params }) {
 
           <div className="grid grid-cols-3 gap-3 border-t border-slate-100 pt-6">
             <div className="flex flex-col items-center text-center gap-1.5">
-              <FiTruck className="w-5 h-5 text-primary" />
+              <FiTruck className="w-5 h-5 text-secondary" />
               <span className="text-[11px] text-text-secondary">Fast Delivery</span>
             </div>
             <div className="flex flex-col items-center text-center gap-1.5">
-              <FiShield className="w-5 h-5 text-primary" />
+              <FiShield className="w-5 h-5 text-secondary" />
               <span className="text-[11px] text-text-secondary">2-Year Warranty</span>
             </div>
             <div className="flex flex-col items-center text-center gap-1.5">
-              <FiRefreshCw className="w-5 h-5 text-primary" />
+              <FiRefreshCw className="w-5 h-5 text-secondary" />
               <span className="text-[11px] text-text-secondary">30-Day Returns</span>
             </div>
           </div>
@@ -246,7 +246,7 @@ export default function ProductDetailsPage({ params }) {
               onClick={() => setActiveTab(tab.id)}
               className={`pb-4 text-sm font-medium border-b-2 transition-colors ${
                 activeTab === tab.id
-                  ? 'border-primary text-primary'
+                  ? 'border-secondary text-secondary'
                   : 'border-transparent text-text-secondary hover:text-text-primary'
               }`}
             >

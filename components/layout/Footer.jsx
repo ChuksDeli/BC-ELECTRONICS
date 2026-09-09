@@ -78,7 +78,7 @@ export default function Footer() {
             <ul className="space-y-2.5">
               <li>
                 <Link href="/about" className="text-sm text-slate-400 hover:text-white transition-colors">
-                  About Ajo
+                  About
                 </Link>
               </li>
               <li>

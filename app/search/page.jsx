@@ -56,7 +56,7 @@ function SearchContent() {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search for products, brands, categories..."
-            className="w-full text-sm border border-slate-200 rounded-full pl-12 pr-4 py-3.5 outline-none focus:ring-2 focus:ring-primary/20"
+            className="w-full text-sm border border-slate-200 rounded-full pl-12 pr-4 py-3.5 outline-none focus:ring-2 focus:ring-secondary/20"
           />
         </div>
       </form>

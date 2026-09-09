@@ -47,7 +47,7 @@ export default function AddressesTab() {
               required
               value={form.label}
               onChange={(e) => setForm({ ...form, label: e.target.value })}
-              className="w-full text-sm border border-slate-200 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-primary/20"
+              className="w-full text-sm border border-slate-200 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-secondary/20"
             />
           </div>
           <div>
@@ -56,7 +56,7 @@ export default function AddressesTab() {
               required
               value={form.address}
               onChange={(e) => setForm({ ...form, address: e.target.value })}
-              className="w-full text-sm border border-slate-200 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-primary/20"
+              className="w-full text-sm border border-slate-200 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-secondary/20"
             />
           </div>
           <div className="grid grid-cols-2 gap-4">
@@ -65,17 +65,17 @@ export default function AddressesTab() {
               placeholder="City"
               value={form.city}
               onChange={(e) => setForm({ ...form, city: e.target.value })}
-              className="w-full text-sm border border-slate-200 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-primary/20"
+              className="w-full text-sm border border-slate-200 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-secondary/20"
             />
             <input
               required
               placeholder="State"
               value={form.state}
               onChange={(e) => setForm({ ...form, state: e.target.value })}
-              className="w-full text-sm border border-slate-200 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-primary/20"
+              className="w-full text-sm border border-slate-200 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-secondary/20"
             />
           </div>
-          <Button type="submit" variant="primary" size="sm">
+          <Button type="submit" variant="secondary" size="sm">
             Save Address
           </Button>
         </form>

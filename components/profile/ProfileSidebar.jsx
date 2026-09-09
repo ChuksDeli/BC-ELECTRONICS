@@ -21,7 +21,7 @@ export default function ProfileSidebar({ active, onChange, onLogout }) {
             onClick={() => onChange(tab.id)}
             className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-colors ${
               active === tab.id
-                ? 'bg-primary/8 text-primary'
+                ? 'bg-primary/8 text-black'
                 : 'text-text-secondary hover:bg-slate-50 hover:text-text-primary'
             }`}
           >

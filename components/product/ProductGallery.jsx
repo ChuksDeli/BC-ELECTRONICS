@@ -35,7 +35,7 @@ export default function ProductGallery({ images, name }) {
               key={i}
               onClick={() => setActive(i)}
               className={`relative w-20 h-20 rounded-xl overflow-hidden border-2 transition-colors ${
-                active === i ? 'border-primary' : 'border-transparent'
+                active === i ? 'border-secondary' : 'border-transparent'
               }`}
             >
               <Image src={img} alt={`${name} thumbnail ${i + 1}`} fill className="object-cover" />

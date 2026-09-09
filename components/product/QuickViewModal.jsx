@@ -113,7 +113,7 @@ export default function QuickViewModal({ product, open, onClose }) {
                 </div>
 
                 <div className="mt-auto pt-6 flex flex-col gap-2">
-                  <Button variant="primary" size="lg" onClick={handleAdd} className="w-full">
+                  <Button variant="secondary" size="lg" onClick={handleAdd} className="w-full">
                     Add to Cart
                   </Button>
                   <Link href={`/products/${product.id}`} onClick={onClose}>

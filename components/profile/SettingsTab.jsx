@@ -46,7 +46,7 @@ export default function SettingsTab() {
             <button
               onClick={() => toggle(opt.key)}
               className={`w-11 h-6 rounded-full flex items-center px-0.5 transition-colors shrink-0 ${
-                settings[opt.key] ? 'bg-primary justify-end' : 'bg-slate-200 justify-start'
+                settings[opt.key] ? 'bg-secondary justify-end' : 'bg-slate-200 justify-start'
               }`}
             >
               <span className="w-5 h-5 rounded-full bg-white shadow-sm block" />
@@ -56,7 +56,7 @@ export default function SettingsTab() {
       </div>
 
       <div className="flex items-center gap-3 mt-6">
-        <Button variant="primary" size="md" onClick={handleSave}>
+        <Button variant="secondary" size="md" onClick={handleSave}>
           Save Settings
         </Button>
         {saved && (
